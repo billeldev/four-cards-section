@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Open Sans", sans-serif;
+}
+.first-text {
+  margin: 50px 0 10px;
+  line-height: 1.6;
+  font-size: 28px;
+  text-align: center;
+  color: hsl(229, 6%, 66%);
+}
+
+.first-text h3 {
+  font-size: 29px;
+  color: hsl(234, 12%, 34%);
+}
+
+.second-text {
+  color: hsl(229, 6%, 66%);
+  text-align: center;
+  font-size: 16px;
+  margin: 0px 37px 45px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards div {
+  box-shadow: 10px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.cards div h3 {
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 10px;
+}
+
+.cards div p {
+  color: hsl(229, 6%, 66%);
+  margin-bottom: 50px;
+}
+
+.cards div img {
+  float: right;
+}
+.cards div:not(:last-child) {
+  margin: 0px 20px 25px;
+}
+
+.cards div:last-child {
+  margin: 0px 20px 50px;
+}
+
+.card1 {
+  border-top: 4px solid hsl(180, 62%, 55%);
+  box-shadow: 0 21px 30px -18px hsl(229deg 6% 66%);
+}
+.card2 {
+  border-top: 4px solid hsl(0, 78%, 62%);
+  box-shadow: 0 21px 30px -18px hsl(229deg 6% 66%);
+}
+.card3 {
+  border-top: 4px solid hsl(34, 97%, 64%);
+  box-shadow: 0 21px 30px -18px hsl(229deg 6% 66%);
+}
+.card4 {
+  border-top: 4px solid hsl(212, 86%, 64%);
+  box-shadow: 0 21px 30px -18px hsl(229deg 6% 66%);
+}
+
+@media (min-width: 768px) {
+  .second-text {
+    width: 500px;
+    margin: 20px auto;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+  .cards div {
+    width: 320px;
+  }
+  .cards div:not(:last-child) {
+    margin: 0;
+  }
+  .cards div:last-child {
+    margin: 0;
+  }
+  .card1 {
+    position: relative;
+    top: 150px;
+    left: 225px;
+  }
+  .card3 {
+    position: relative;
+    right: 100%;
+    top: 290px;
+  }
+  .card4 {
+    position: relative;
+    left: 165%;
+    bottom: 110px;
+  }
+}
